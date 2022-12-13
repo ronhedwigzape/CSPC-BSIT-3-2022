@@ -67,6 +67,8 @@ require_once 'students.php';
                         <tr>
                             <?php if ($student_link['fb_link'] == '')  { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled">Link Not Found</a></td>
+                            <?php } else if ($student_link['fb_link'] == $student) { ?>
+                                <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled"><?= $student ?></a></td>
                             <?php } else { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" id="fb-link"><?= $student?></a></td>
                             <?php } ?>
@@ -118,8 +120,8 @@ require_once 'students.php';
                         <tr>
                             <?php if ($student_link['fb_link'] == '')  { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled">Link Not Found</a></td>
-                            <?php } else if ($student_link['fb_link'] == 'Fabricante, Ma. Angela Janelle Dela Paz') { ?>
-                                <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled">Fabricante, Ma. Angela Janelle Dela Paz</a></td>
+                            <?php } else if ($student_link['fb_link'] == $student) { ?>
+                                <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled"><?= $student ?></a></td>
                             <?php } else { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" id="fb-link"><?= $student?></a></td>
                             <?php } ?>
@@ -171,6 +173,8 @@ require_once 'students.php';
                         <tr>
                             <?php if ($student_link['fb_link'] == '')  { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled">Link Not Found</a></td>
+                            <?php } else if ($student_link['fb_link'] == $student) { ?>
+                                <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled"><?= $student ?></a></td>
                             <?php } else { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" id="fb-link"><?= $student?></a></td>
                             <?php } ?>
@@ -222,8 +226,8 @@ require_once 'students.php';
                         <tr>
                             <?php if ($student_link['fb_link'] == '')  { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled">Link Not Found</a></td>
-                            <?php } else if ($student_link['fb_link'] == 'Mejia, John Christian Catimbang') { ?>
-                                <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled">Mejia, John Christian Catimbang</a></td>
+                            <?php } else if ($student_link['fb_link'] == $student) { ?>
+                                <td class="text-center"><a href="<?= $student_link['fb_link']?>" class="nav-link text-secondary disabled"><?= $student ?></a></td>
                             <?php } else { ?>
                                 <td class="text-center"><a href="<?= $student_link['fb_link']?>" id="fb-link"><?= $student?></a></td>
                             <?php } ?>
